@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from builtins import range
-
 from mock import patch
 
 from snips_nlu.constants import (RES_MATCH_RANGE, VALUE, ENTITY, DATA, TEXT,
@@ -544,10 +543,14 @@ class TestDeterministicIntentParser(SnipsTest):
                 ]
             },
             "slot_names_to_entities": {
-                "dummy_slot_name": "dummy_entity_1",
-                "dummy slot nàme": "dummy_entity_1",
-                "dummy_slot_name3": "dummy_entity_2",
-                "dummy_slot_name2": "dummy_entity_2"
+                "dummy_intent_1": {
+                    "dummy_slot_name": "dummy_entity_1",
+                    "dummy_slot_name3": "dummy_entity_2",
+                    "dummy_slot_name2": "dummy_entity_2"
+                },
+                "dummy_intent_2": {
+                    "dummy slot nàme": "dummy_entity_1"
+                }
             }
         }
 
