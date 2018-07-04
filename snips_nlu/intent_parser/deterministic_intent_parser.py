@@ -4,7 +4,7 @@ import logging
 import re
 from builtins import str
 
-from future.utils import itervalues, iteritems
+from future.utils import iteritems
 
 from snips_nlu.builtin_entities import (is_builtin_entity,
                                         get_builtin_entities)
